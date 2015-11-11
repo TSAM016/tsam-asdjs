@@ -1,8 +1,8 @@
 //Esercizio 1 Iterativo
 array1 = [1,2,3,4,5,6,7,8,-9,10];
-somma = 0;
 
 function sumTillNeg(myarray){
+    somma = 0;
     if (myarray.length == 0){
         return 0;
     } else {
@@ -42,9 +42,9 @@ console.log(ex_1_R(array1));
 
 
 //Esercizio 2 Iterativo
-sumodd = 0;
 
 function sumOdd(n){
+    sumodd = 0;
     if(n < 0){
         return 0;
     } else {
@@ -83,8 +83,9 @@ console.log(ex_2_R(10));
 
 //Esercizio 3 Iterativo (l'array di riferimento è
 //quello dell'Esercizio 1)
-somm = 0;
+
 function average(array){
+    somm = 0;
     if(array.length == 0){
         return 0;
     } else {
@@ -117,9 +118,10 @@ console.log(ex_3_R(array1));
 
 
 //Esercizio 4 Iterativo
-sumint = 0;
-sumint2 = 0;
+
 function sumInterval(a,b){
+    sumint = 0;
+    sumint2 = 0;
     if(a < b){
         for(;b >= a;b--){
             sumint += b;
@@ -161,8 +163,9 @@ console.log(ex_4_R(5,3));
 
 
 //Esercizio 5 Iterativo
-summ = 0;
+
 function mult(a,b){
+    summ = 0;
     for(;b > 0;b--){
         summ += a;
     }
@@ -188,9 +191,10 @@ console.log(ex_5_R(2,3));
 
 
 //Esercizio 6 Iterativo
-q = 0;
-r = 0;
+
 function div(a,b){
+    q = 0;
+    r = 0;
     while(a - b >= 0){
         a -= b;
         q++;
@@ -321,8 +325,9 @@ console.log(ex_10_I(3,4));
 
 //Esercizio 10 Ricorsivo
 array = [];
-cont = 0;
+
 function replicateR(a,n){
+    cont = 0;
     if(n > 0){
         array[cont] = a;
         cont++;
